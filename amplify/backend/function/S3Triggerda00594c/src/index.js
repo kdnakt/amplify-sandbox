@@ -171,7 +171,7 @@ exports.handler = async (event, context, callback) => {
   console.log('Received S3 event:', JSON.stringify(event, null, 2));
 
   client = new AWSAppSyncClient({
-    url: process.env.API_PHOTOALBUMS_GRAPHQLAPIENDPOINTOUTPUT,
+    url: process.env.API_AMPLIFYSANDBOX1_GRAPHQLAPIENDPOINTOUTPUT,
     region: process.env.REGION,
     auth: {
       type: AUTH_TYPE.AWS_IAM,
