@@ -77,7 +77,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-amplify-sandbox-dev-91203-deployment",
-					"S3Key": "amplify-builds/S3Triggerda00594c-52667a36683442305377-build.zip"
+					"S3Key": "amplify-builds/S3Triggerda00594c-3131787762384c5a6c56-build.zip"
 				}
 			}
 		},
@@ -158,6 +158,32 @@
 									}
 								]
 							}
+						}
+					]
+				}
+			}
+		},
+		"S3accessPolicy": {
+			"DependsOn": [
+				"LambdaExecutionRole"
+			],
+			"Type": "AWS::IAM::Policy",
+			"Properties": {
+				"PolicyName": "s3-access-policy",
+				"Roles": [
+					{
+						"Ref": "LambdaExecutionRole"
+					}
+				],
+				"PolicyDocument": {
+					"Version": "2012-10-17",
+					"Statement": [
+						{
+							"Effect": "Allow",
+							"Action": [
+								"s3:*"
+							],
+							"Resource": "*"
 						}
 					]
 				}
