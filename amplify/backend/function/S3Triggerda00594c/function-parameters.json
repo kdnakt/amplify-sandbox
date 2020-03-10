@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "api": {
+            "amplifysandbox1": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

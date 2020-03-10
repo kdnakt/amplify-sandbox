@@ -334,7 +334,7 @@
             ],
             "Type": "AWS::IAM::Policy",
             "Properties": {
-                "PolicyName": "amplify-lambda-execution-policy-storage",
+                "PolicyName": "amplify-lambda-execution-policy",
                 "Roles": [
                     {
                         "Ref": "functionS3Triggerda00594cLambdaExecutionRole"
