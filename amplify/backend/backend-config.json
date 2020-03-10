@@ -1,1 +1,10 @@
-{}
+{
+	"auth": {
+		"amplifysandboxfd69e06a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
